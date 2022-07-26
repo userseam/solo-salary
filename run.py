@@ -1,18 +1,22 @@
 import gspread
 
-print("Welcome to the solo salary application \n")
+days = ("Monday" , "Tuseday", "Wensday", "Thursday", "Fryday")
 
-def week_days():
-    """ 
-    This will be used to loop throw all the 5 days of the week and add them to a list
-    """
-    
-    
-    days = ["Monday" , "Tuseday" , "Wensday", "Thursday" , "Fryday"]
+yes_or_no = {}
+
+def get_week_days():
+    print("Welcome to the solo salary application ! \n")
+    print("Enter either yes or no as an awnser... \n")
+
     for i in days:
-        input(f"Did you work on  {i} ? \n")
-    
-    
-       
+        print(f"Did you work on {i} ? \n \n ")
+        answer = input().strip().lower()
+        if not answer.isalpha() or answer not in ["yes","no"]:
+            print("pleas enter the corecct choice")
+        yes_or_no[i] = answer
+        
+get_week_days()
+print(yes_or_no)
 
-week_days()
+
+
