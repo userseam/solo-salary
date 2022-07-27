@@ -1,31 +1,56 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Solo $alary
 
-Welcome Morad Mouhttouch,
+#### summary
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
-## Reminders
+> This is a rather simpel python prjoect
+> that takes user input and calculates
+> how much that the user have earned
+> throw out the week deppending on howe 
+> many days he/she have worked.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
+### Features
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+- looping trow all the days of the week and storeing the value provided by the user
+- clear layout and self describing titels
+- usering data input to calculate how much the user have earned that week
+- error handeling of the user input in the form of 
+- imporing samrt soultions to strore the amount of awnser a spesifc awnser in a variabel for future use
+- transforming user data to match the expected input and removeing spaces and transforming everything to lowercase
 
-1. `heroku/python`
-2. `heroku/nodejs`
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
 
-Connect your GitHub repository and deploy as normal.
+### Responsive design
 
-## Constraints
+<img src="/workspace/solo-salary/img/resposive_solo_salary.png">
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
------
-Happy coding!
+### validation
+
+* PEP8 
+no critical errors 
+
+### Referensed code from other sources 
+
+* none 
+
+### errors
+
+I had some mayor issues with refering back to my loop without makeing a cluster
+bomb of code and figured that I instead could refrens a function that all ready contains the loop and I 
+can there for run it in the try: without any mayor problems 
+ 
+  * changed the for loop for and added a print(input) instead
+
+
+changed the days variabel data type from list to dict to store the input awanser as a value 
+
+I couldent count the dicotanry specific values so I instead imported a extrenal solution that 
+made it possibel to instead extract the nummber of one spesific input value and stored it in a variabel
+that could later on be referensed to
+
+
+`
+
