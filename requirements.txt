@@ -1,4 +1,5 @@
 cachetools==5.2.0
+Counter==1.0.0
 google-auth==2.9.1
 google-auth-oauthlib==0.5.2
 gspread==5.4.0
