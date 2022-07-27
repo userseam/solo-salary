@@ -12,9 +12,9 @@ def get_week_days():
 
     for i in days:
         """loop trow all the days in the days variabel"""   
-        print(f"Did you work on {i} ? \n \n ")
-        answer = input().strip().lower() 
-        """removes spaces , transform to lowercase""" 
+        print(f"Did you work on {i} ? \n")
+        answer = input("\n").strip().lower()
+        """removes spaces , transform to lowercase to not raise error""" 
         if not answer.isalpha() or answer not in ["yes", "no"]:
             
             print(f"Value Error : {answer} , please follow the instructions above or you will have to start over")
@@ -36,7 +36,7 @@ work_week = Counter(yes_or_no.values())
 days_worked = work_week["yes"]
 """extrecting the nummber of "yes":es and storeing it in a variabel"""
 
-print(f"Well done , you have worked for a total of {days_worked} this week! \n")
+print(f"You have worked for a total of {days_worked} this week! \n")
 "telling the user on how many days of the week they have worked"
 
 payment = work_week["yes"] * 200
