@@ -6,26 +6,55 @@ days = ("Monday", "Tuseday", "Wensday", "Thursday", "Fryday")
 yes_or_no = {}
 
 
+
 def get_week_days():
     print("Welcome to the solo salary application ! \n")
     print("Enter either yes or no as an awnser... \n")
+    
 
     for i in days:
         """loop trow all the days in the days variabel"""   
-        print(f"Did you work on {i} ? \n")
-        answer = input("\n").strip().lower()
+       
         """removes spaces , transform to lowercase to not raise error""" 
-        if not answer.isalpha() or answer not in ["yes", "no"]:
+        
+        while True:
+            print(f"Did you work on {i} ? \n")
+            answer = input("\n").strip().lower()
+           
+            if not answer.isalpha() or answer not in ["yes", "no"]:
+                 print(f"Value Error : {answer} , please follow the instructions above and insert the correct input")
+                 print("__________________________")
+                 print(f"Did you work on {i} ? \n ")
+                 answer = input("\n").strip().lower()
+            if answer.isalpha() or answer is ["yes", "no"]:
+                break   
+
+          
+                
+
             
-            print(f"Value Error : {answer} , please follow the instructions above or you will have to start over")
-            break
-            """
+            
+        
+        
+
+
+        
+        """
             if the wrong user input is wrong , print message and validates that
             the user input was in a str format and matching the expected awnser
             if not , the user would be notefied and can try agian
-            
-            """
+        """
+        
+
+
         yes_or_no[i] = answer
+
+
+
+
+
+
+
 get_week_days()
 """ calling  the function for input and validation for what days the user have worked"""
 
