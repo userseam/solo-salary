@@ -6,9 +6,12 @@ days = ("Monday", "Tuseday", "Wensday", "Thursday", "Fryday")
 
 yes_or_no = {}
 
-stock = {"laptop": 150, "phone": 75, "TV": 100, "Coustom_PC": 225, "coffe_machine": 150, "frezzer": 100}
+stock = {"laptop": 150, "phone": 75, "TV": 100, "Coustom_PC": 225,\
+     "coffe_machine": 150, "frezzer": 100}
+
 
 def get_week_days():
+
 
     print("✭  Welcome to the solo salary application ! ✭  \n")
     print("Enter either yes or no as an awnser... \n")
@@ -19,7 +22,8 @@ def get_week_days():
             print(f"Did you work on {i} ? \n")
             answer = input("\n").strip().lower()
             if not answer.isalpha() or answer is ["yes","no"]:
-                print(f"Value Error : {answer} , please follow the instructions above and insert the correct input")
+                print(f"Value Error : {answer} , please follow the instructions\
+                     above and insert the correct input")
                 print(" ! __________________________ ! \n")    
                 print(f"    Did you work on {i} ? \n ")
                 print(" ! __________________________ ! \n")
@@ -28,16 +32,18 @@ def get_week_days():
         yes_or_no[i] = answer
    
     
-    def sales_comision():
-        print(stock.items)
+def sales_comision():
+    print("Lets see what youv sold this week")
             
             
-        
+sales_comision()        
 get_week_days()
-""" calling  the function for input and validation for what days the user have worked"""
+""" calling  the function for input and validation\
+     for what days the user have worked"""
 
 work_week = Counter(yes_or_no.values())
-"""checking the amount of yes values from the user input stored in the yes_or_no variabel"""
+"""checking the amount of yes values from the user\
+     input stored in the yes_or_no variabel"""
 
 
 days_worked = work_week["yes"]
