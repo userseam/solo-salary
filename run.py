@@ -12,7 +12,6 @@ stock = {"laptop": 150, "phone": 75, "TV": 100, "Coustom_PC": 225,\
 
 def get_week_days():
 
-
     print("✭  Welcome to the solo salary application ! ✭  \n")
     print("Enter either yes or no as an awnser... \n")
     for i in days:
