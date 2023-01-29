@@ -6,8 +6,8 @@ days = ("Monday", "Tuseday", "Wensday", "Thursday", "Fryday")
 
 yes_or_no = {}
 
-stock = {"laptop": 150, "phone": 75, "TV": 100, "Coustom_PC": 225,\
-     "coffe_machine": 150, "frezzer": 100}
+stock = {"laptops": 150, "phones": 75, "TV:s": 100, "Coustom_PC:s": 225,\
+     "coffe_machines": 150, "frezzers": 100}
 
 
 def get_week_days():
@@ -20,7 +20,7 @@ def get_week_days():
         while True:
             print(f"Did you work on {i} ? \n")
             answer = input("\n").strip().lower()
-            if not answer.isalpha() or answer is ["yes","no"]:
+            if not answer.isalpha() or answer is ["yes", "no"]:
                 print(f"Value Error : {answer} , please follow the instructions\
                      above and insert the correct input")
                 print(" ! __________________________ ! \n")    
@@ -33,9 +33,14 @@ def get_week_days():
     
 def sales_comision():
     print("Lets see what youv sold this week")
+    for Y in stock.keys():
+        print(f"did you sell one or more {Y}")
             
-            
+
+
 sales_comision()        
+
+
 get_week_days()
 """ calling  the function for input and validation\
      for what days the user have worked"""
