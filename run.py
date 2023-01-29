@@ -12,7 +12,7 @@ stock = {"laptops": 150, "phones": 75, "TV:s": 100, "Coustom_PC:s": 225,\
 
 def get_week_days():
 
-    print("✭  Welcome to the solo salary application ! ✭  \n")
+    print("\n✭  Welcome to the solo salary application ! ✭  \n")
     print("Enter either yes or no as an awnser... \n")
     for i in days:
         """loop trow all the days in the days variabel"""   
@@ -35,6 +35,8 @@ def sales_comision():
     print("Lets see what youv sold this week")
     for Y in stock.keys():
         print(f"did you sell one or more {Y}")
+        awnser2 = input()
+
             
 
 
